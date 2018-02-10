@@ -20,17 +20,17 @@
             <div class="content">
                 @RenderBody()
             </div>
-            <footer class="footer">
-                <div class="container-fluid">
-                    @{Html.RenderPartial("_botnavbar", null); }
-                    <p class="copyright pull-right">
-                        &copy; @DateTime.Now.Year
-                        <a href="#"> NSS </a>
-                    </p>
-                </div>
-            </footer>
         </div>
-    </div>
+    </div> 
+    <footer class="footer">
+        <div class="container-fluid">
+            @{Html.RenderPartial("_botnavbar", null); }
+            <p class="copyright pull-right">
+                &copy; @DateTime.Now.Year
+                <a href="#"> NSS </a>
+            </p>
+        </div>
+    </footer>  
     @Scripts.Render("~/bundles/corejs")
     <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
