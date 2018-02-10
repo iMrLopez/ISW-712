@@ -23,7 +23,7 @@ namespace ProyectoIngenieria
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
                       "~/Content/material-dashboard.css",
-                      "~/Content/demo.css"));
+                      "~/Content/demo.css", "~/Content/fondo.css"));
         }
     }
 }
