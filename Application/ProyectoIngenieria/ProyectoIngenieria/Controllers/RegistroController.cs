@@ -9,8 +9,12 @@ namespace ProyectoIngenieria.Controllers
     public class RegistroController : Controller
     {
         // GET: Registro
-        public ActionResult Index()
+        public ActionResult Registrarse()
         {
+            return View();
+        }
+
+        public ActionResult Perfil() {
             return View();
         }
 

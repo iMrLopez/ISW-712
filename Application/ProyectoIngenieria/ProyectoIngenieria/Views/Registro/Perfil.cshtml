@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header" data-background-color="purple">
+                    <h4 class="title">Visualizar Perfil</h4>
+                    <p class="category">Esta informacion tenemos registrada en la base de datos</p>
+                </div>
+                <div class="card-content">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputid">Numero de Cedula</label>
+                                    <input type="text" class="form-control" id="inputid" placeholder="Numero de cedula" value="1 - 111 000">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Nombre Completo</label>
+                                    <input type="email" class="form-control" id="inputnombre" placeholder="Nombre completo" value="Juan Perez Galindo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputcareer">Carrera deseada</label>
+                                    <input type="text" class="form-control" id="inputcareer" placeholder="Carrera" value="Ingenieria del Software">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputfecha">Fecha de Nacimiento</label>
+                                    <input type="email" class="form-control" id="inputfecha" placeholder="Fecha Nacimiento" value="07/11/1995">
+                                </div>
+                            </div>
+                            <!--<button type="submit" class="btn btn-primary pull-right">Submit</button>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-profile">
+                <div class="card-avatar">
+                    <a href="#pablo">
+                        <img class="img" src="@Url.Content("~/Content/imgs/logo-utn.png")">
+                    </a>
+                </div>
+                <div class="content">
+                    <h6 class="category text-gray">Universidad Tecnica Nacional</h6>
+                    <h4 class="card-title">Calidad con excelencia</h4>
+                    <p class="card-content">
+                        CAMBIAR ESTO  CAMBIAR ESTO  CAMBIAR ESTO  CAMBIAR ESTO  CAMBIAR ESTO CAMBIAR ESTO CAMBIAR ESTO CAMBIAR ESTO CAMBIAR ESTO
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

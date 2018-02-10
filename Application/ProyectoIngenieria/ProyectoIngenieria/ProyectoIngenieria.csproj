@@ -151,6 +151,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\imgs\admision1.jpg" />
+    <Content Include="Content\imgs\admision2.jpg" />
+    <Content Include="Content\imgs\admision3.jpg" />
+    <Content Include="Content\imgs\logo-utn.png" />
+    <Content Include="Content\imgs\modulo6.jpg" />
     <Content Include="Content\login-register.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -190,7 +195,8 @@
     <Content Include="Views\Shared\_botnavbar.cshtml" />
     <Content Include="Views\Shared\_sidebar.cshtml" />
     <Content Include="Views\Shared\_topnavbar.cshtml" />
-    <Content Include="Views\Registro\Index.cshtml" />
+    <Content Include="Views\Registro\Registrarse.cshtml" />
+    <Content Include="Views\Registro\Perfil.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
