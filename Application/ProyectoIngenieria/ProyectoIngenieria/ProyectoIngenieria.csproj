@@ -160,6 +160,7 @@
     <Content Include="Content\imgs\admision3.jpg" />
     <Content Include="Content\imgs\logo-utn.png" />
     <Content Include="Content\imgs\modulo6.jpg" />
+    <Content Include="Content\imgs\user_icon.png" />
     <Content Include="Content\login-register.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
