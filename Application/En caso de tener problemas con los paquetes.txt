@@ -1,0 +1,19 @@
+El proyecto esta configurado para NO SUBIR los paquetes que ustedes descargan en sus pcs por problemas de referenciamiento que da Visual Studio al cambiar la ruta del proyecto constantemente.
+
+*** SOLUCIONAR REFERENCIAS CORRUPTAS DEL PROYECTO ****
+
+Al abrir el proyecto notara que TODAS las referencias se encuentran con un "triangulo" de error, para solucionar esto debe hacer lo siguiente:
+
+1. Abrir la consola de paquetes Nuget
+	Tools > NuGet Package Manager > Package Manager Console
+	Herramientas > Administrador de paquetes NuGet > Consola del administrador de paquetes
+2. Notara una con la opcion de "Restaurar", debe utilizar esa opcion y esperar a que finalice
+3. Hacer un build de la solucion y ejecutarla en su computadora.
+
+
+FAQ:
+
+Por que no hay nada en la carpeta "bin" ?
+	R/ En la carpeta bin se generan archivos automaticamente cuando usted hace un "build" de la solucion.
+No hay manera de mantener las referencias en el proyecto ?
+	R/ No, ya que se pierden las rutas relativas a las mismas y hay que agregarlas manualmente.
