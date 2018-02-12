@@ -155,24 +155,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\fondo.css" />
     <Content Include="Content\imgs\admision1.jpg" />
     <Content Include="Content\imgs\admision2.jpg" />
     <Content Include="Content\imgs\admision3.jpg" />
     <Content Include="Content\imgs\logo-utn.png" />
     <Content Include="Content\imgs\modulo6.jpg" />
     <Content Include="Content\imgs\user_icon.png" />
-    <Content Include="Content\login-register.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\login-register.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -189,6 +183,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_botnavbar.cshtml" />
