@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Candidatos> <!-- Este XML simula la base de datos de candidatos, cada nodo <Candidato> representa un candidato nuevo -->
+	<Candidato>
+		<Id>123456789</Id>
+		<Nombre>Marny Lopez Lopez</Nombre>
+		<Provincia>Alajuela</Provincia>
+		<Canton>Central</Canton>
+		<Barrio>San Jose</Barrio>
+		<TotalAccionesAfirm>5</TotalAccionesAfirm>
+		<TotalNotaPresentacion>85</TotalNotaPresentacion>
+		<ListaAccionesAfirmativas>
+			<AccionAfirmativa>
+				<IdAccionAfirmativa>1</IdAccionAfirmativa>
+				<TipoAccionAfirmativa>CantonBajoRecurso</TipoAccionAfirmativa>
+				<PuntosAccionAfirmativa>5</PuntosAccionAfirmativa>
+			</AccionAfirmativa>
+		</ListaAccionesAfirmativas>
+	</Candidato>
+</Candidatos>
