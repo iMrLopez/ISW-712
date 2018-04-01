@@ -1,0 +1,128 @@
+﻿@model ProyectoIngenieria.Models.Aspirante
+
+@{
+    ViewBag.Title = "Datos Personales";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="bannerprincipal card-header">
+                    <h4 class="title">Datos Personales</h4>
+                </div>
+                <div class="card-content">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputid">Numero de Cedula</label>
+                                    <input type="text" class="form-control" id="inputid" placeholder="101110111">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Nombre</label>
+                                    <input type="email" class="form-control" id="inputnombre" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Primero Apellido</label>
+                                    <input type="email" class="form-control" id="inputnombre" placeholder="Primero Apellido">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Segundo Apellido</label>
+                                    <input type="email" class="form-control" id="inputnombre" placeholder="Segundo Apellido">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputcareer">Genero</label><br />
+                                    <input type="radio" class="radio-inline" id="radioMasculino" name="Genero" value="M"><label class="control-label">Masculino</label><br>
+                                    <input type="radio" class="radio-inline" id="radioFemenino" name="Genero" value="F"><label class="control-label">Femenino</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputfecha">Fecha de Nacimiento</label><br />
+                                    <input type='date' class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Direccion</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Provincia</label>
+                                    <select id="Select1" class="form-control">
+                                        <option>
+                                            Alajuela
+                                        </option>
+                                        <option>
+                                            San Jose
+                                        </option>
+                                        <option>
+                                            Heredia
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Canton</label>
+                                    <select id="Select1" class="form-control">
+                                        <option>
+                                            Alajuela
+                                        </option>
+                                        <option>
+                                            San Jose
+                                        </option>
+                                        <option>
+                                            Heredia
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Distrito</label>
+                                    <select id="Select1" class="form-control">
+                                        <option>
+                                            Alajuela
+                                        </option>
+                                        <option>
+                                            San Jose
+                                        </option>
+                                        <option>
+                                            Heredia
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btnprincipal btn  pull-right">
+                                        Siguente
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
