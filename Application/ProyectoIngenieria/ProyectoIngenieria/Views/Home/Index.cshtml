@@ -1,4 +1,4 @@
-﻿@model ProyectoIngenieria.Models.Candidato
+﻿@model ProyectoIngenieria.Models.Aspirante
 @{
     ViewBag.Title = "Inicio";
     //#adc5e6  - celeste. #0d2d6d -azul
@@ -72,7 +72,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label class="control-label" for="inputcedula">Numero de Identificacion Personal</label>
-                                @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control", @id = "inputcedula", placeholder = "Ingrese numero de cedula" } })
+                                @Html.EditorFor(model => model.Cedula, new { htmlAttributes = new { @class = "form-control", @id = "inputcedula", placeholder = "Ingrese numero de cedula" } })
                                 <label class="control-label" for="inputcarrera1">Opcion de carrera 1</label>
                                 @Html.DropDownListFor(m => m.Carrera1, new SelectList(Enum.GetValues(typeof(Carrera))), new { @class = "form-control" })
                                 <label class="control-label" for="inputcarrera2">Opcion de carrera 2</label>
