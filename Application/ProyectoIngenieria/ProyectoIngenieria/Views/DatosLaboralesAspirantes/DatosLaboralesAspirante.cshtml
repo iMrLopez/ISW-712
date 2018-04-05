@@ -1,0 +1,101 @@
+﻿@model ProyectoIngenieria.Models.DatosLaboralesAspirante
+
+@{
+    ViewBag.Title = "DatosLaboralesAspirante";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DatosLaboralesAspirante</h2>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="bannerprincipal card-header">
+                    <h4 class="title">Visualizar Perfil Datos Laborales</h4>
+                    <p class="category"></p>
+                </div>
+                <div class="card-content">
+                    <form role="form">
+                        <div class="row">
+
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputfecha">¿Trabaja Actualmente?</label>
+                                    <br>
+
+                                    <input type="radio" name="si" value="si" id="si">si
+                                    <input type="radio" name="No" value="No" id="no" onselect=""> No
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputid">Nombre de la Empresa</label>
+
+
+                                    @Html.EditorFor(model => model.empresa, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.empresa, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputnombre">Años de laborales</label>
+                                    @Html.EditorFor(model => model.Añolaborales, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Añolaborales, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputcareer">Departamento laboral</label>
+                                    @Html.EditorFor(model => model.departamentoLaboral, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.departamentoLaboral, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputfecha">Puesto laboral</label>
+                                    @Html.EditorFor(model => model.puestotrabajo, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.puestotrabajo, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="control-label" for="inputfecha">¿Tiene relacion su trabajo actual con las carreras a las aplico la admsion?</label>
+
+                                    <input type="radio" name="si" value="si">si<br>
+                                    <input type="radio" name="No" value="No"> No
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <button type="submit" class="btnprincipal btn  pull-right">
+                                        Siguente
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+</div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
