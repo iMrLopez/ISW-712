@@ -1,0 +1,39 @@
+﻿@model ProyectoIngenieria.Models.Aspirante
+
+@{
+    ViewBag.Title = "INA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="bannerprincipal card-header card-header-icon">
+                    <h4 class="title"><i class="material-icons">&#xE894;</i> Información  INA</h4>
+                    <p class="category">Si cuentas con algun curso del INA relacionado a la carrera puedes agregarlo aca</p>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="inputTitulo">Nombre del titulo o especialidad</label>
+                                            <input type="text" class="form-control" id="inputTitulo">
+                                            <label class="control-label" for="inputTitulo">Año de graduación</label>
+                                            <input type="text" class="form-control" id="inputAñoGraduacion">
+                                            <button type="submit" class="btnprincipal btn  pull-right">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

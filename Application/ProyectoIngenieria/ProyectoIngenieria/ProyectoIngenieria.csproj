@@ -223,6 +223,10 @@
     <Content Include="Views\DatosMep.cshtml" />
     <Content Include="Views\DatosLaboralesAspirante.cshtml" />
     <Content Include="Views\DatosAspiranteINA.cshtml" />
+    <Content Include="Views\Home\DatosINA.cshtml" />
+    <Content Include="Views\Home\DatosLaborales.cshtml" />
+    <Content Include="Views\Home\DatosMep.cshtml" />
+    <Content Include="Views\Home\ResultadoAdmision.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Datos\" />

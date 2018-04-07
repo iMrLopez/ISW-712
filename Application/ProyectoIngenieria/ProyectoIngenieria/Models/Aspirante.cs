@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace ProyectoIngenieria.Models
 {
@@ -31,5 +32,6 @@ namespace ProyectoIngenieria.Models
 
         public Carrera Carrera1 { get; set; }
         public Carrera Carrera2 { get; set; }
+
     }
 }

@@ -1,0 +1,83 @@
+﻿@model ProyectoIngenieria.Models.Aspirante
+
+@{
+    ViewBag.Title = "DatosLaboralesAspirante";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="bannerprincipal card-header card-header-icon">
+                    <h4 class="title"><i class="material-icons">&#xE894;</i> Información  Datos Laborales</h4>
+                    <p class="category">Aca se buscara atraves de la cedula del aspirante, si tiene cursos en el INA</p>
+                </div>
+                <div class="card-content">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputfecha">¿Trabaja Actualmente?</label>
+                                    <br><input type="radio" name="si" value="si" id="si">si
+                                    <br><input type="radio" name="No" value="No" id="no" onselect=""> No
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputid">Nombre de la Empresa</label>
+
+
+                                    <input type="text" class="form-control" id="<inputTitulo">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputnombre">Años de laborales</label>
+                                    <input type="text" class="form-control" id="<inputTitulo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputcareer">Departamento laboral</label>
+                                    <input type="text" class="form-control" id="<inputTitulo">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputfecha">Puesto laboral</label>
+                                    <input type="text" class="form-control" id="<inputTitulo">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="control-label" for="<inputfecha">¿Tiene relacion su trabajo actual con las carreras a las aplico la admsion?</label>
+                                    <br>
+                                    <input type="radio" name="si" value="si">Si<br>
+                                    <input type="radio" name="No" value="No">No
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <button type="submit" class="btnprincipal btn  pull-right">
+                                        Finalizar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
