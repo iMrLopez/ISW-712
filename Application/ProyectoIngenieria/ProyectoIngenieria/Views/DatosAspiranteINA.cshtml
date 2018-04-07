@@ -1,0 +1,67 @@
+﻿@model ProyectoIngenieria.Models.DatosINA
+
+@{
+    ViewBag.Title = "DatosAspiranteINA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DatosAspiranteINA</h2>
+@{
+    ViewBag.Title = "INA";
+}
+
+<h2>INA</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="bannerprincipal card-header card-header-icon">
+                    <h4 class="title"><i class="material-icons">&#xE894;</i> Información  INA</h4>
+                    <p class="category">Aca se buscara atraves de la cedula del aspirante, si tiene cursos en el INA</p>
+                </div>
+                <div class="card-content">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            
+                                           
+
+                                            <input type="text" class="form-control" id="inputcedula" placeholder="Ingrese numero de cedula">
+
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <label class="control-label" for="inputTitulo">Nombre del titulo o especialidad</label>
+                                            <input type="text" class="form-control" id="inputTitulo">
+
+                                            <label class="control-label" for="inputTitulo">Año de graduación</label>
+                                            <input type="text" class="form-control" id="inputAñoGraduacion">
+                                            
+
+
+
+
+                                            <br />
+                                            <br />
+
+                                            <label class="control-label" for="inputPuntos">Puntos</label>
+                                            <input type="text" class="form-control" id="inputPuntos">
+
+
+                                            <button type="submit" class="btnprincipal btn  pull-right">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

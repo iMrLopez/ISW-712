@@ -154,6 +154,7 @@
     </Compile>
     <Compile Include="Models\AccionAfirmativa.cs" />
     <Compile Include="Models\Aspirante.cs" />
+    <Compile Include="Models\AspiranteMEP.cs" />
     <Compile Include="Models\Canton.cs" />
     <Compile Include="Models\Distrito.cs" />
     <Compile Include="Models\Genero.cs" />
@@ -219,6 +220,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\DatosPersonales.cshtml" />
+    <Content Include="Views\DatosMep.cshtml" />
+    <Content Include="Views\DatosLaboralesAspirante.cshtml" />
+    <Content Include="Views\DatosAspiranteINA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Datos\" />

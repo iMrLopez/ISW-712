@@ -379,3 +379,4 @@ D:\Repositories\UTN\ISW-712\Application\ProyectoIngenieria\ProyectoIngenieria\ob
 D:\Repositories\UTN\ISW-712\Application\ProyectoIngenieria\ProyectoIngenieria\obj\Debug\ProyectoIngenieria.pdb
 D:\Repositories\UTN\ISW-712\Application\ProyectoIngenieria\ProyectoIngenieria\bin\roslyn\System.Collections.Immutable.dll
 D:\Repositories\UTN\ISW-712\Application\ProyectoIngenieria\ProyectoIngenieria\obj\Debug\ProyectoIngenieria.csprojResolveAssemblyReference.cache
+C:\Users\jsan1\Documents\isw-712\Application\ProyectoIngenieria\ProyectoIngenieria\obj\Debug\ProyectoIngenieria.csprojResolveAssemblyReference.cache
