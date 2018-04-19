@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ProyectoIngenieria.Models.Aspirante>
+
+@{
+    ViewBag.Title = "Resultado de Admision";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="bannerprincipal card-header card-header-icon">
+                    <!--</div>data-background-color="green"-->
+                    <h4 class="card-title"><i class="material-icons">&#xE894;</i> Resultados del proceso de admision</h4>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Cedula)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.NotaIngreso)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Carrera1)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FechaAdmision)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.EstadoAdmision)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Cedula)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NotaIngreso)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Carrera1)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.FechaAdmision)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.EstadoAdmision)
+                                        </td>
+                                    </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

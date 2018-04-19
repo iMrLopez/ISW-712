@@ -11,58 +11,34 @@
             <div class="card">
                 <div class="bannerprincipal card-header card-header-icon">
                     <h4 class="title"><i class="material-icons">&#xE894;</i> Información  Datos Laborales</h4>
-                    <p class="category">Aca se buscara atraves de la cedula del aspirante, si tiene cursos en el INA</p>
+                    <p class="category">Si trabajas por favor ingresa la informacion abajo, sino simplemente dale siguiente</p>
                 </div>
                 <div class="card-content">
                     @using (Html.BeginForm())
                     {
                         @Html.AntiForgeryToken()
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <label class="control-label" for="<inputfecha">¿Trabaja Actualmente?</label>
-                                    <br><input type="radio" name="si" value="si" id="si">si
-                                    <br><input type="radio" name="No" value="No" id="no" onselect=""> No
-
-
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label" for="<inputid">Nombre de la Empresa</label>
-
-
-                                    <input type="text" class="form-control" id="<inputTitulo">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label" for="<inputnombre">Años de laborales</label>
-                                    <input type="text" class="form-control" id="<inputTitulo">
-                                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LABORALEmpresa, htmlAttributes: new { @class = "control-label", @for = "LABORALEmpresa" })
+                                @Html.EditorFor(model => model.LABORALEmpresa, new { htmlAttributes = new { @class = "form-control", @id = "LABORALEmpresa", @placeholder = "Empresa Los Patitos ..." } })
+                                @Html.ValidationMessageFor(model => model.LABORALEmpresa, "", new { @class = "text-danger" })
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LABORALPuesto, htmlAttributes: new { @class = "control-label", @for = "LABORALPuesto" })
+                                @Html.EditorFor(model => model.LABORALPuesto, new { htmlAttributes = new { @class = "form-control", @id = "LABORALPuesto", @placeholder = "Puesto ejercido ..." } })
+                                @Html.ValidationMessageFor(model => model.LABORALPuesto, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label" for="<inputcareer">Departamento laboral</label>
-                                    <input type="text" class="form-control" id="<inputTitulo">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="control-label" for="<inputfecha">Puesto laboral</label>
-                                    <input type="text" class="form-control" id="<inputTitulo">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <label class="control-label" for="<inputfecha">¿Tiene relacion su trabajo actual con las carreras a las aplico la admsion?</label>
-                                    <br>
-                                    <input type="radio" name="si" value="si">Si<br>
-                                    <input type="radio" name="No" value="No">No
-
-
+                                    @Html.LabelFor(model => model.LABORALInicioLabores, htmlAttributes: new { @class = "control-label", @for = "LABORALInicioLabores" })
+                                    @Html.EditorFor(model => model.LABORALInicioLabores, new { htmlAttributes = new { @class = "form-control", @id = "LABORALInicioLabores", @placeholder = "Carrera ..." } })
+                                    @Html.ValidationMessageFor(model => model.LABORALInicioLabores, "", new { @class = "text-danger" })
                                 </div>
                             </div>
                             <div class="col-md-5">

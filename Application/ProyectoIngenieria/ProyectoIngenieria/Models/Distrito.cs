@@ -4,5 +4,6 @@ public enum Distrito
 {
    Alajuela,
    San_Jose,
-   Central
+   Central,
+    Guacima
 };

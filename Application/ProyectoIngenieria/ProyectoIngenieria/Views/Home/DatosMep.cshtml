@@ -20,22 +20,25 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="inputid">Nota de presentacón</label>
-                                    <input type="text" class="form-control" id="inputNota" placeholder="26 a 40" value="">
+                                    @Html.LabelFor(model => model.MEPNotaPresentacion, htmlAttributes: new { @class = "control-label", @for = "inputNotaPresentacion" })
+                                    @Html.EditorFor(model => model.MEPNotaPresentacion, new { htmlAttributes = new { @class = "form-control", @id = "inputNotaPresentacion", @placeholder = " 00 - 100" } })
+                                    @Html.ValidationMessageFor(model => model.MEPNotaPresentacion, "", new { @class = "text-danger" })
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="inputnombre">Colegio</label>
-                                    <input type="text" class="form-control" id="inputnombreColegio" placeholder="Nombre completo del colegio" value="">
+                                    @Html.LabelFor(model => model.MEPColegio, htmlAttributes: new { @class = "control-label", @for = "inputColegioNombre" })
+                                    @Html.EditorFor(model => model.MEPColegio, new { htmlAttributes = new { @class = "form-control", @id = "inputColegioNombre", @placeholder = "Colegio ...." } })
+                                    @Html.ValidationMessageFor(model => model.MEPColegio, "", new { @class = "text-danger" })
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label" for="inputcareer">Año de egreso</label>
-                                    <input type="text" class="form-control" id="inputAnno" placeholder="1989" value="">
+                                    @Html.LabelFor(model => model.MEPAnnoEgresado, htmlAttributes: new { @class = "control-label", @for = "inputAnnoEgresado" })
+                                    @Html.EditorFor(model => model.MEPAnnoEgresado, new { htmlAttributes = new { @class = "form-control", @id = "inputAnnoEgresado", @placeholder = "1989 - 2017" } })
+                                    @Html.ValidationMessageFor(model => model.MEPAnnoEgresado, "", new { @class = "text-danger" })
                                 </div>
                             </div>
                         </div>

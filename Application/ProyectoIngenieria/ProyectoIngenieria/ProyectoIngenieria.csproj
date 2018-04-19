@@ -148,13 +148,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccionAfirmativa.cs" />
     <Compile Include="Models\Aspirante.cs" />
-    <Compile Include="Models\AspiranteMEP.cs" />
     <Compile Include="Models\Canton.cs" />
     <Compile Include="Models\Distrito.cs" />
     <Compile Include="Models\Genero.cs" />
@@ -220,23 +218,18 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\DatosPersonales.cshtml" />
-    <Content Include="Views\DatosMep.cshtml" />
-    <Content Include="Views\DatosLaboralesAspirante.cshtml" />
-    <Content Include="Views\DatosAspiranteINA.cshtml" />
     <Content Include="Views\Home\DatosINA.cshtml" />
     <Content Include="Views\Home\DatosLaborales.cshtml" />
     <Content Include="Views\Home\DatosMep.cshtml" />
     <Content Include="Views\Home\ResultadoAdmision.cshtml" />
+    <Content Include="Views\Home\listadoResultado.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Datos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Shared\_botnavbar.cshtml" />
     <Content Include="Views\Shared\_sidebar.cshtml" />
     <Content Include="Views\Shared\_topnavbar.cshtml" />
-    <Content Include="Views\Registro\Registrarse.cshtml" />
-    <Content Include="Views\Registro\Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

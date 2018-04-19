@@ -21,11 +21,13 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="control-label" for="inputTitulo">Nombre del titulo o especialidad</label>
-                                            <input type="text" class="form-control" id="inputTitulo">
-                                            <label class="control-label" for="inputTitulo">Año de graduación</label>
-                                            <input type="text" class="form-control" id="inputAñoGraduacion">
-                                            <button type="submit" class="btnprincipal btn  pull-right">Aceptar</button>
+                                            @Html.LabelFor(model => model.INACarrera, htmlAttributes: new { @class = "control-label", @for = "INACarrera" })
+                                            @Html.EditorFor(model => model.INACarrera, new { htmlAttributes = new { @class = "form-control", @id = "INACarrera", @placeholder = "Carrera ..." } })
+                                            @Html.ValidationMessageFor(model => model.INACarrera, "", new { @class = "text-danger" })
+                                            @Html.LabelFor(model => model.INAAnnoGraduacion, htmlAttributes: new { @class = "control-label", @for = "INAAnnoGraduacion" })
+                                            @Html.EditorFor(model => model.INAAnnoGraduacion, new { htmlAttributes = new { @class = "form-control", @id = "INAAnnoGraduacion", @placeholder = " 00 - 100" } })
+                                            @Html.ValidationMessageFor(model => model.INAAnnoGraduacion, "", new { @class = "text-danger" })
+                                            <button type="submit" class="btnprincipal btn  pull-right">Continuar</button>
                                         </div>
                                     </div>
                                 </div>

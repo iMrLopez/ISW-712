@@ -1,0 +1,134 @@
+﻿@model IEnumerable<ProyectoIngenieria.Models.Aspirante>
+
+@{
+    ViewBag.Title = "Aspirantes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="bannerprincipal card-header card-header-icon">
+                    <!--</div>data-background-color="green"-->
+                    <h4 class="card-title"><i class="material-icons">&#xE894;</i> Aspirantes Inscritos Actualmente</h4>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Cedula)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Nombre)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Apellido1)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Apellido2)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FechaNacimiento)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Direccion)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.MEPNotaPresentacion)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.MEPColegio)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.MEPAnnoEgresado)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.INACarrera)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.INAAnnoGraduacion)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LABORALEmpresa)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LABORALPuesto)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LABORALInicioLabores)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.NotaIngreso)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FechaAdmision)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Cedula)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Nombre)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Apellido1)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Apellido2)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Direccion)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MEPNotaPresentacion)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MEPColegio)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.MEPAnnoEgresado)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.INACarrera)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.INAAnnoGraduacion)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LABORALEmpresa)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LABORALPuesto)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LABORALInicioLabores)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.NotaIngreso)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FechaAdmision)
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
