@@ -169,20 +169,10 @@ namespace ProyectoIngenieria.Controllers
             retorno.Add(new Aspirante()
             {
                Cedula = "207210224",
-                Nombre = "Jean Carlos ",
-                Apellido1 = "Arroyo ",
-                Apellido2 = "Hernández ",
-                Genero = Genero.Masculino,
-                FechaNacimiento = "09/01/94",
-                Direccion = "la Guácima ",
-                Provincia = Provincia.Alajuela,
+                INAAnnoGraduacion = "2017",
+                INACarrera = "Informatica aplicada a servicios",
                 Carrera1 = Carrera.INGENIERÍA_DEL_SOFTWARE_TECNOLOGÍAS_INFORMÁTICAS,
-                Canton = Canton.Central,
-                Distrito = Distrito.Guacima,
-                MEPNotaPresentacion = "30",
-                MEPColegio = "Liceo la Guácima ",
-                MEPAnnoEgresado = "2011",
-                NotaIngreso = 7.5f,
+                                NotaIngreso = 7.5f,
                 FechaAdmision = "4/20/2018",
                 EstadoAdmision = "Lista de Espera"
             }); //Este caso de pruebas es el ID 207210224 incluye toda la informacion del aspirante
@@ -211,4 +201,4 @@ namespace ProyectoIngenieria.Controllers
 
 
     }
-}
+}`1
